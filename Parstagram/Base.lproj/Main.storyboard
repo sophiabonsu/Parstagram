@@ -83,7 +83,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="Username" destination="K55-cf-TTX" id="HRv-W3-Cb8"/>
                         <outlet property="passwordField" destination="TIr-Da-kaT" id="eXH-kV-Nx3"/>
                         <outlet property="usernameField" destination="K55-cf-TTX" id="WwJ-g8-GCO"/>
                         <segue destination="x2x-8l-Xcq" kind="presentation" identifier="loginSegue" id="qjA-Er-MLn"/>
