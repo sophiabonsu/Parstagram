@@ -20,6 +20,7 @@
 		EC0C6AEF25F4AF3A00EB5A74 /* ParstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0C6AEE25F4AF3A00EB5A74 /* ParstagramUITests.swift */; };
 		EC1EE53525F737D3003039F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1EE53425F737D3003039F3 /* LoginViewController.swift */; };
 		EC1EE53A25F737E5003039F3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1EE53925F737E5003039F3 /* FeedViewController.swift */; };
+		EC64DA4A25F80B73003E2DCB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64DA4925F80B73003E2DCB /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		EC0C6AF025F4AF3A00EB5A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1EE53425F737D3003039F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC1EE53925F737E5003039F3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EC64DA4925F80B73003E2DCB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				EC0C6AD225F4AF3900EB5A74 /* Parstagram.xcdatamodeld */,
 				EC1EE53425F737D3003039F3 /* LoginViewController.swift */,
 				EC1EE53925F737E5003039F3 /* FeedViewController.swift */,
+				EC64DA4925F80B73003E2DCB /* CameraViewController.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				EC1EE53A25F737E5003039F3 /* FeedViewController.swift in Sources */,
 				EC0C6ACA25F4AF3900EB5A74 /* AppDelegate.swift in Sources */,
 				EC0C6ACC25F4AF3900EB5A74 /* SceneDelegate.swift in Sources */,
+				EC64DA4A25F80B73003E2DCB /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
