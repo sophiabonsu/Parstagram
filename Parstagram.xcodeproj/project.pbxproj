@@ -21,6 +21,7 @@
 		EC1EE53525F737D3003039F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1EE53425F737D3003039F3 /* LoginViewController.swift */; };
 		EC1EE53A25F737E5003039F3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1EE53925F737E5003039F3 /* FeedViewController.swift */; };
 		EC64DA4A25F80B73003E2DCB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64DA4925F80B73003E2DCB /* CameraViewController.swift */; };
+		ECA7B7B826054A7E007FA17B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7B7B726054A7E007FA17B /* CommentCell.swift */; };
 		ECFA16B025F9E4AC001BA181 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA16AF25F9E4AC001BA181 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		EC1EE53425F737D3003039F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC1EE53925F737E5003039F3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		EC64DA4925F80B73003E2DCB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		ECA7B7B726054A7E007FA17B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		ECFA16AF25F9E4AC001BA181 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0C6AC925F4AF3900EB5A74 /* AppDelegate.swift */,
+				ECA7B7B726054A7E007FA17B /* CommentCell.swift */,
 				EC0C6ACB25F4AF3900EB5A74 /* SceneDelegate.swift */,
 				EC0C6ACF25F4AF3900EB5A74 /* Main.storyboard */,
 				EC0C6AD525F4AF3A00EB5A74 /* Assets.xcassets */,
@@ -425,6 +428,7 @@
 				EC0C6ACA25F4AF3900EB5A74 /* AppDelegate.swift in Sources */,
 				EC0C6ACC25F4AF3900EB5A74 /* SceneDelegate.swift in Sources */,
 				EC64DA4A25F80B73003E2DCB /* CameraViewController.swift in Sources */,
+				ECA7B7B826054A7E007FA17B /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
