@@ -8,22 +8,33 @@
 import UIKit
 import Parse
 import AlamofireImage
+import MessageInputBar
 
 class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-     var posts = [PFObject]()
+    let commentBar = MessageInputBar()
+    
+    var posts = [PFObject]()
   
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
+        tableView.keyboardDismissMode = .interactive
         // Do any additional setup after loading the view.
     }
     
+    override var inputAccessoryView: UIView?{
+        return commentBar
+    }
+    
+    override var canBecomeFirstResponder: Bool{
+        return true
+    }
     @IBAction func onLogoutButton(_ sender: Any) {
         
         PFUser.logOut()
