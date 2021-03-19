@@ -15,7 +15,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var tableView: UITableView!
     
     let commentBar = MessageInputBar()
-    
+    var showsCommentBar = false
     var posts = [PFObject]()
   
     override func viewDidLoad() {
@@ -33,7 +33,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     override var canBecomeFirstResponder: Bool{
-        return true
+        return showsCommentBar
     }
     @IBAction func onLogoutButton(_ sender: Any) {
         
@@ -65,7 +65,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let post = posts[section]
         let comments = (post["comments"] as? [PFObject]) ?? []
 
-        return comments.count + 1
+        return comments.count + 2
          }
          
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -94,7 +94,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         cell.photoView.af_setImage(withURL: url)
         
         return cell
-        }else{
+        } else if indexPath.row <= comments.count{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
             let comment = posts[indexPath.row-1]
             cell.commentLabel.text = comment["text"] as? String
@@ -102,12 +102,14 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             let user = post["author"] as! PFUser
             cell.nameLabel.text = user.username
 
-
-
-            
             return cell
             
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell")!
+        
+            return cell
         }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
