@@ -35,29 +35,36 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saucy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDR-Cp-45v">
-                                                    <rect key="frame" x="36" y="372" width="50.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <rect key="frame" x="16" y="372" width="53" height="32"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wow,that looks geat " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-56-LXT">
-                                                    <rect key="frame" x="94.5" y="372" width="291.5" height="20.5"/>
+                                                    <rect key="frame" x="77" y="372" width="329" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="bWg-56-LXT" firstAttribute="leading" secondItem="iDR-Cp-45v" secondAttribute="trailing" constant="8" id="1X5-F2-BaL"/>
                                                 <constraint firstItem="bOP-Ib-Yz4" firstAttribute="leading" secondItem="DfJ-EF-b5C" secondAttribute="leading" constant="8" id="3cu-Sy-xMu"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bWg-56-LXT" secondAttribute="trailing" constant="8" id="Dec-Co-XCm"/>
+                                                <constraint firstAttribute="trailing" secondItem="bWg-56-LXT" secondAttribute="trailing" constant="8" id="5Kr-t0-n0b"/>
+                                                <constraint firstItem="bWg-56-LXT" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="8U3-fy-NGE"/>
+                                                <constraint firstItem="bWg-56-LXT" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="GVP-kV-V5f"/>
                                                 <constraint firstItem="bWg-56-LXT" firstAttribute="leading" secondItem="iDR-Cp-45v" secondAttribute="trailing" constant="8" id="Hiz-3z-ZeB"/>
+                                                <constraint firstItem="iDR-Cp-45v" firstAttribute="leading" secondItem="DfJ-EF-b5C" secondAttribute="leading" constant="16" id="MQv-td-utI"/>
+                                                <constraint firstAttribute="trailing" secondItem="bWg-56-LXT" secondAttribute="trailing" constant="8" id="QyO-dZ-EIR"/>
                                                 <constraint firstItem="iDR-Cp-45v" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="TS0-Fu-8wE"/>
-                                                <constraint firstItem="iDR-Cp-45v" firstAttribute="leading" secondItem="DfJ-EF-b5C" secondAttribute="leadingMargin" constant="16" id="bkK-1w-up0"/>
+                                                <constraint firstAttribute="bottom" secondItem="bWg-56-LXT" secondAttribute="bottom" constant="8" id="Teu-OQ-4ER"/>
+                                                <constraint firstItem="bWg-56-LXT" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="Ws7-0z-Xe2"/>
                                                 <constraint firstAttribute="trailing" secondItem="bOP-Ib-Yz4" secondAttribute="trailing" constant="8" id="cMO-Qb-664"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="bWg-56-LXT" secondAttribute="bottom" constant="8" id="gaB-0F-4bj"/>
                                                 <constraint firstItem="iDR-Cp-45v" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="khz-K1-UVx"/>
+                                                <constraint firstAttribute="bottom" secondItem="iDR-Cp-45v" secondAttribute="bottom" constant="8" id="li0-s1-vVT"/>
+                                                <constraint firstItem="iDR-Cp-45v" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="p92-Fb-2cv"/>
                                                 <constraint firstItem="bOP-Ib-Yz4" firstAttribute="top" secondItem="DfJ-EF-b5C" secondAttribute="top" constant="8" id="q8Q-ci-T5R"/>
-                                                <constraint firstItem="bWg-56-LXT" firstAttribute="top" secondItem="bOP-Ib-Yz4" secondAttribute="bottom" constant="8" id="u6O-KZ-tK5"/>
+                                                <constraint firstItem="bWg-56-LXT" firstAttribute="leading" secondItem="iDR-Cp-45v" secondAttribute="trailing" constant="8" id="vNG-gR-Etc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -66,7 +73,7 @@
                                             <outlet property="usernameLabel" destination="iDR-Cp-45v" id="zpd-4U-zbn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="GOs-Mg-3zT" userLabel="Comment Cell" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="GOs-Mg-3zT" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="440" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOs-Mg-3zT" id="0c2-6Y-leR">
@@ -94,7 +101,6 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wig-cS-9VY" secondAttribute="bottom" constant="8" id="Tll-8T-Dgs"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cbG-3b-EHk" secondAttribute="trailing" constant="8" id="YII-LT-0EV"/>
                                                 <constraint firstItem="cbG-3b-EHk" firstAttribute="leading" secondItem="Wig-cS-9VY" secondAttribute="trailing" constant="8" id="h0k-lB-ziA"/>
-                                                <constraint firstItem="cbG-3b-EHk" firstAttribute="leading" secondItem="Wig-cS-9VY" secondAttribute="trailing" constant="8" id="vmT-ap-qqZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -103,24 +109,28 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="rdV-BM-fgf">
-                                        <rect key="frame" x="0.0" y="477.5" width="414" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="477.5" width="414" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rdV-BM-fgf" id="TBn-iW-RgM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeC-bb-zBQ">
-                                                    <rect key="frame" x="16" y="8" width="390" height="21.5"/>
+                                                    <rect key="frame" x="16" y="8" width="390" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" systemColor="systemGray4Color"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="UeC-bb-zBQ" firstAttribute="top" secondItem="TBn-iW-RgM" secondAttribute="top" constant="8" id="ZhQ-Ge-kjH"/>
+                                                <constraint firstItem="UeC-bb-zBQ" firstAttribute="top" secondItem="TBn-iW-RgM" secondAttribute="top" constant="8" id="eda-dE-V3W"/>
                                                 <constraint firstItem="UeC-bb-zBQ" firstAttribute="leading" secondItem="TBn-iW-RgM" secondAttribute="leading" constant="16" id="fjs-zT-Xhn"/>
                                                 <constraint firstAttribute="bottom" secondItem="UeC-bb-zBQ" secondAttribute="bottom" constant="8" id="g5Q-tA-y0B"/>
+                                                <constraint firstItem="UeC-bb-zBQ" firstAttribute="leading" secondItem="TBn-iW-RgM" secondAttribute="leading" constant="16" id="nTm-iv-gQd"/>
                                                 <constraint firstAttribute="trailing" secondItem="UeC-bb-zBQ" secondAttribute="trailing" constant="8" id="oY9-w2-Hyk"/>
+                                                <constraint firstAttribute="bottom" secondItem="UeC-bb-zBQ" secondAttribute="bottom" constant="8" id="prr-ru-vjJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="UeC-bb-zBQ" secondAttribute="trailing" constant="8" id="zNh-2a-7ua"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -291,6 +301,9 @@
         <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
