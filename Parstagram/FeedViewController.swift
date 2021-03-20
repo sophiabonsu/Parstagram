@@ -54,8 +54,13 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
         let LoginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-        let  delegate = UIApplication.shared.delegate as! SceneDelegate
         
+       // let delegate = UIApplication.shared.delegate as? SceneDelegate
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let delegate = windowScene.delegate as? SceneDelegate
+          else {
+            return
+          }
         delegate.window?.rootViewController = LoginViewController
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -156,7 +161,7 @@ class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             cell.nameLabel.text = user.username
 
            return cell
-//
+
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell")!
         
